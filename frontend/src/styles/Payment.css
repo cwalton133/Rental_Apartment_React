@@ -1,0 +1,29 @@
+.credit-card-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.credit-card {
+    width: 300px;
+    height: 180px;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.credit-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.payment-box {
+    text-align: center;
+}
+
+.payment-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
