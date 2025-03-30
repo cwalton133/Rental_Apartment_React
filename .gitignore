@@ -1,0 +1,32 @@
+# General
+*.log
+.env
+__pycache__/
+.vscode/
+.idea/
+
+# Python
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+migrations/
+
+# Django
+*.db
+media/
+staticfiles/
+
+# Node.js
+node_modules/
+dist/
+*.lock
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+
+# Environment
+.env
+.env.local
