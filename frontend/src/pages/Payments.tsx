@@ -68,9 +68,11 @@ const Payment = () => {
         navigate("/payment-success");
       } else {
         setError("Unexpected response from the server.");
+        navigate("/payment-failed");
       }
     } catch (err) {
       setError("Payment failed. Please try again.");
+      navigate("/payment-failed");
     } finally {
       setLoading(false);
     }
@@ -128,6 +130,10 @@ const Payment = () => {
             <label>Full Name</label>
             <input type="text" className="form-control" name="full_name" onChange={handleInputChange} />
 
+        <label>Email Address</label>
+        <input type="email" className="form-control" name="email" value={formData.email} onChange={handleInputChange} readOnly />
+
+
             <label>Country</label>
             <select className="form-control" name="country" onChange={handleInputChange}>
               <option value="">-- Select Country --</option>
@@ -143,6 +149,10 @@ const Payment = () => {
           <div className="payment-details">
             <label>Full Name</label>
             <input type="text" className="form-control" name="full_name" onChange={handleInputChange} />
+
+        <label>Email Address</label>
+        <input type="email" className="form-control" name="email" value={formData.email} onChange={handleInputChange} readOnly />
+
 
             <label>Country</label>
             <select className="form-control" name="country" onChange={handleInputChange}>

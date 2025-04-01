@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Container, Alert } from "react-bootstrap";
+import { Button, Card, Container, Alert, Table, Form } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -13,6 +13,9 @@ const Booking: React.FC = () => {
     image: string;
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     // ✅ Fetch Property Details
@@ -28,9 +31,19 @@ const Booking: React.FC = () => {
       });
   }, [id]);
 
+  // ✅ Calculate total price based on date selection
+  useEffect(() => {
+    if (startDate && endDate && property) {
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+      const days = Math.max(0, (end.getTime() - start.getTime()) / (1000 * 3600 * 24));
+      setTotalPrice(days * property.price_per_night);
+    }
+  }, [startDate, endDate, property]);
+
   // ✅ Handle Booking Navigation
   const handleBookNow = () => {
-    navigate(`/payment/${id}`); // ✅ Redirect to Payment.tsx with Property ID
+    navigate(`/payment/${id}?startDate=${startDate}&endDate=${endDate}&totalPrice=${totalPrice}`);
   };
 
   return (
@@ -45,9 +58,37 @@ const Booking: React.FC = () => {
           <Card.Img variant="top" src={property.image} style={{ height: "200px", objectFit: "cover" }} />
           <Card.Body>
             <Card.Title>{property.title}</Card.Title>
-            <Card.Text>Price: ${property.price_per_night} per night</Card.Text> {/* ✅ Fixed price display */}
-            {/* ✅ Redirect to Payment.tsx */}
-            <Button variant="primary" onClick={handleBookNow}>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>Price per Night</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${property.price_per_night}</td>
+                  <td>
+                    <Form.Control
+                      type="date"
+                      value={startDate}
+                      onChange={(e) => setStartDate(e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <Form.Control
+                      type="date"
+                      value={endDate}
+                      onChange={(e) => setEndDate(e.target.value)}
+                    />
+                  </td>
+                  <td>${totalPrice}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <Button variant="primary" onClick={handleBookNow} disabled={!startDate || !endDate || totalPrice === 0}>
               Book Now
             </Button>
           </Card.Body>
