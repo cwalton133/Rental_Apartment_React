@@ -30,3 +30,78 @@ docker-compose.override.yml
 # Environment
 .env
 .env.local
+
+
+# created by virtualenv automatically
+*
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Ignore local settings
+local_settings.py
+
+# Virtual environment
+venv/
+env/
+env.bak/
+venv.bak/
+.venv/
+.Python
+
+# IDE or Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Static files
+/static/
+media/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest
+.cache
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Coverage reports
+.coverage
+htmlcov/
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# VSCode settings
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
