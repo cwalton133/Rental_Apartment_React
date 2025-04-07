@@ -75,7 +75,7 @@ const Home: React.FC = () => {
       <div className="hero-section text-center py-5 mb-5 bg-light rounded">
         <h1 className="display-4">Find Your Dream Rental</h1>
         <p className="lead">Explore the best apartments for rent at affordable prices.</p>
-        <Link to="/listing">
+        <Link to="./listings">
           <Button variant="primary" size="lg">Browse Listings</Button>
         </Link>
       </div>
