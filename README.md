@@ -82,23 +82,23 @@ Represents a course related to an author.
   <a href="https://www.udemy.com/course/#" target="_blank"><img src="https://img.shields.io/badge/Udemy-5624D0?style=for-the-badge&logo=Udemy&logoColor=white" alt="Udemy"></a>
 </p>
 <p align="left">
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-01 224950.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-01 224950.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 081023.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081023.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 081402.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081402.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 081615.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081615.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 081630.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081630.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 081849.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081849.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 082044.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 082044.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-02 082229.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 082229.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/tree/master/frontend/public/images/Screenshot 2025-04-05 171330.png">
+<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-05 171330.png">
 
 </p>
 
