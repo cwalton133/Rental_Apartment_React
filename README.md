@@ -90,15 +90,10 @@ Represents a course related to an author.
 
 <img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081615.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081630.png">
 
 <img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 081849.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 082044.png">
 
-<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-02 082229.png">
-
-<img src="https://github.com/cwalton133/Rental_Apartment_React/blob/master/Screenshot 2025-04-05 171330.png">
 
 </p>
 
